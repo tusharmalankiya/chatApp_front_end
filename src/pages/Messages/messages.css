@@ -1,0 +1,98 @@
+.messages-container {
+  /* background: rgb(0, 63, 83); */
+  /* border: 6px solid red; */
+  width: 100%;
+  /* height:100vh; */
+  /* display: flex; */
+  /* align-items: space-between; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* margin-bottom: 7%; */
+}
+
+.messages-header {
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #282c34;
+}
+.messages-header h6 {
+  margin: 0;
+  padding: 0;
+  /* text-align: center; */
+}
+
+.messages-body {
+  height: calc(100vh - 102px);
+  /* height:100vh; */
+  /* padding:40px 0; */
+  overflow: auto;
+  padding-bottom: 30px;
+  margin: 0 15px;
+  /* border:1px solid yellow; */
+  /* margin-bottom:70px; */
+}
+
+.messages-footer {
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  display: flex;
+  position: sticky;
+  width: 100%;
+  bottom: 2px;
+  left: 0;
+  background-color: #282c34;
+}
+
+.messages-footer div {
+  flex: 10;
+}
+.messages-footer .message-box {
+  height: 100%;
+  width: 100%;
+  background: inherit;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+}
+.messages-footer .sendButton {
+  flex: 2;
+  border: none;
+  background: grey;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  /* background: lightgreen; */
+}
+
+.messages-footer .sendButton:active {
+  background: black;
+}
+
+.messages-footer .sendButton:disabled {
+  opacity: 0.5;
+}
+
+@media (max-width: 800px) {
+  .messages-container {
+    height: 100%;
+  }
+
+  .messages-body {
+    height: 80vh;
+  }
+
+  .messages-footer {
+    position: static;
+  }
+}
